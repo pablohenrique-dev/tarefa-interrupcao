@@ -5,11 +5,12 @@
 #include "hardware/clocks.h"
 
 // Biblioteca gerada pelo arquivo .pio durante compilação.
+// Responsável pelo controle da matriz de leds RGB
 #include "ws2818b.pio.h"
 
 // Configuração dos pinos
 #define PIN_LED_VERMELHO 13
-#define TEMPO_LED_VERMELHO 200
+#define TEMPO_LED_VERMELHO_EM_MILISEGUNDOS 200
 
 #define PIN_BOTAO_A 5 // Define o pino do botão A
 #define PIN_BOTAO_B 6 // Define o pino do botão B
@@ -272,5 +273,5 @@ void piscar_led_vermelho()
   static bool estado = false;
   estado = !estado;
   gpio_put(PIN_LED_VERMELHO, estado);
-  sleep_ms(TEMPO_LED_VERMELHO);
+  sleep_ms(TEMPO_LED_VERMELHO_EM_MILISEGUNDOS);
 }

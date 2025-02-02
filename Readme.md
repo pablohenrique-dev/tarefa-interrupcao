@@ -60,3 +60,7 @@ O código utiliza:
    - Transfira o código compilado para a placa e execute-o.
 
 Agora seu projeto está pronto para explorar o funcionamento de interrupções e controle de LEDs com a BitDogLab! 🚀
+
+## Vídeo sobre o projeto
+
+[Link do vídeo](https://youtu.be/kcPQGhOJCg0)
